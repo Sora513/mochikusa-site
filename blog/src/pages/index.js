@@ -34,7 +34,7 @@ const Index = ({ data }) => {
                 <p>どうぞ、ごゆっくりしていってください。</p>
             </div>
             <div className="maincontents-section">
-            <h2>物申したい/連絡が取りたい/依頼したい</h2>
+            <h2>連絡/依頼したい</h2>
               <p>TwitterのDMより連絡ください。<br />
                 もしくは、mochikusa.yomogi「at」gmail.comまでお願い致します。</p>
             </div>

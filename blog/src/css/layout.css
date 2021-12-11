@@ -796,6 +796,15 @@ Note: Beware of modifying this element as it can break the animations - you shou
     background-color: rgba(39,43,42, 0.95) !important;
     color:white;
   }
+
+  
+  .maincontents-section{
+    border-top: dashed 2px gray;
+  }
+
+  .maincontents h1{
+    font-size: 24px;
+  }
   
   .maincontents h2{
     font-size:24px;
@@ -890,6 +899,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
     text-align: center;
     margin-top: 2rem;
     flex-basis: 25%;
+    border-top: dashed 2px gray;
   }
   .name{
     color: black !important;
@@ -902,6 +912,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
   
   .profileimg {
+    border-radius: 50%;
     width: 50% !important;
     max-width: 250px;
   }
