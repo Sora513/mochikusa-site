@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   # name: git-gateway
   branch: main
-  # repo: Sora513/mochikusa-site
+  repo: Sora513/mochikusa-site
 publish_mode: editorial_workflow
 media_folder: blog/src/images
 public_folder: ../images/
