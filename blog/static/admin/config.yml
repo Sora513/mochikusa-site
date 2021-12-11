@@ -1,16 +1,16 @@
 backend:
   name: git-gateway
   # name: git-gateway
-  branch: main
-  repo: Sora513/mochikusa-site
+  # branch: master
+  # repo: Sora513/mochikusa-site
 publish_mode: editorial_workflow
-media_folder: src/images
+media_folder: blog/src/images
 public_folder: ../images/
   
 collections:
   - name: mochikusa
     label: Post
-    folder: src/posts
+    folder: blog/src/posts
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
