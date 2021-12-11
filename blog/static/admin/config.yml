@@ -1,0 +1,21 @@
+backend:
+  name: git-gateway
+  # name: git-gateway
+  # branch: master
+  # repo: Sora513/mochikusa-site
+publish_mode: editorial_workflow
+media_folder: src/images
+public_folder: ../images/
+  
+collections:
+  - name: mochikusa
+    label: Post
+    folder: src/posts
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "post"}
+      - { name: date, label: Date, widget: date ,format: "YYYY-MM-DD"}
+      - { name: title, label: Title }
+      - { name: tag, label: Tag, widget: string }
+      - { name: body, label: Body, widget: markdown }

@@ -1,0 +1,1117 @@
+@media screen and (min-width:1025px){
+
+  body{
+    margin: 0;
+    font-family: 'Noto Serif JP', serif;
+  }
+  
+  header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: rgba(255,255,249,0.95);
+    width: 100%;
+  }
+  header img{
+    width: 24px;
+    height: auto;
+  }
+  
+  .header-flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+    margin:0em 2% 0em 0;
+  }
+  
+  header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h2{
+    margin:0 0 0 2%;
+    font-weight: normal;
+    font-size: medium;
+  }
+  
+  header ul{
+    margin:1em 2% 1em 0;
+  list-style-type: none;
+  }
+  
+  header li{
+    display: inline-block;
+    padding:0.5em 1em;
+  }
+  
+  header a{
+    color: black;
+    text-decoration: none;
+  }
+  
+  footer{
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  /* position: absolute; */
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255,255,249,0.95);
+  }
+  
+  footer img{
+    height: 1em;
+  }
+  
+  .toppage-top{
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+  }
+  
+  .toppage-top p{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .top-backimage{
+    width: 100%;
+    filter: blur(3px) opacity(0.5);
+  }
+  
+  .top-logoimage{
+    position: absolute;
+    width: 300px;
+    height: auto;
+    top: calc(40% - 150px);
+    left: calc(50% - 150px);
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 10px rgba(255,255,255,0.6)
+  }
+  
+  .toppage-contents{
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+  
+  .index-contents-top{
+    padding-top: 100vh !important;
+  }
+  
+  .flex-container{
+    display: flex;
+    align-items: center;
+  }
+  
+  .concert-img-wrapper{
+    max-width: 42.5%;
+    margin: 0 5%;
+  }
+  .top-youtube-wrapper{
+    position: relative;
+    margin: 0 5%;
+    flex-basis: 50%;
+    padding-bottom: calc(315 / 560 * 50%);
+  }
+  .about-us-text{
+    flex-basis: 50%;
+  }
+  
+  .top-youtube-wrapper iframe{
+    position: absolute;
+    top: 0;
+    right:0;
+    width: 100%;
+    height: 100%;
+    margin: auto auto;
+  }
+  
+  .concert-img{
+    width: 100%;
+  }
+  
+  .top-soloist-img{
+    width: 100%;
+    /* border-radius: 20px; */
+  }
+  
+  .concert-text{
+    position: relative;
+    margin:0 5% 0 0;
+    text-align: left;
+    padding-bottom: 8rem;
+  }
+  
+  .ict-container{
+    padding: 20px 20%;
+  margin-top: -10vh;
+  background-color: rgba(255,255,249,0.9);
+  }
+  
+  .top-content-container{
+    
+    padding: 20px 20%;
+  margin-top: 10vh;
+  background-color: rgba(255,255,249,0.9);
+  }
+  
+  .black-back{
+    background-color: rgba(39,43,42, 0.95) !important;
+    color:white;
+  }
+  .maincontents-section{
+    border-top: dashed 2px gray;
+  }
+
+  .maincontents ul{
+    list-style-type: square;
+  }
+
+  .maincontents h1{
+    font-size: 32px;
+    margin-bottom: 48px;
+  }
+  
+  .maincontents h2{
+    font-size: 28px;
+  }
+  .maincontents h3{
+  font-size: 24px;  
+  }
+  
+  .maincontents h4{
+    font-size: 20px;
+  }
+  .maincontents p{
+    font-size: medium;
+    line-height: 1.7em;
+  }
+  
+  .linkbtn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 2rem 0 ;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #212529;
+    border-radius: 0.5rem;
+  }
+  
+  .linkbtn a{
+    text-decoration: none;
+    padding: 2rem 2.5rem;
+  
+    color: #fff;
+    border-radius: 100% 80px / 80px 100%;
+    background-color: #618e34;
+    transition-duration: 1s;
+  }
+  
+  .linkbtn a:hover{
+    
+    color: #fff;
+    border-radius: 60% 80% / 100% 80%;
+    transition-duration: 1s;
+  }
+  
+  .see-more-arrow{
+    margin-left:.5em;
+    margin-right: .5em;
+    transition-duration: 1s;
+  }
+  .back-arrow{
+    margin-right: .5em;
+  }
+  
+  .link-back{
+    color: #4753a2 !important;
+    font-size: larger;
+    border-bottom: dashed 2px gray;
+    
+  }
+  
+  .linkbtn a:hover .see-more-arrow{
+    margin-right: 0em;
+    margin-left: 1em;
+  
+  }
+  
+  .page-flex-container{
+    margin: 2rem 3% 0 10%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 80px;
+  }
+  
+  .flex-left{
+    margin-top: 2rem;
+    flex-basis: 70%;
+  }
+  
+  .flex-right{
+    text-align: center;
+    margin-top: 2rem;
+    flex-basis: 25%;
+    border-left: dashed 2px gray;
+  }
+  .name{
+    color: black !important;
+    font-size: large !important;
+    font-weight: bold;
+  }
+  
+  .flex-right img{
+    width: 100%;
+  }
+  
+  .profileimg {
+    border-radius: 50%;
+    width: 50% !important;
+  }
+  .profile p {
+    color: gray;
+    font-size: small;
+  }
+  
+  .profile-contents{
+    padding: 1em;
+    text-align: left;
+  }
+  
+  .profile a{
+    color:red !important;
+  }
+  
+  .about-flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 16px 32px 16px;
+    margin: 0 0 0 0;
+    border-bottom: dashed 2px gray;
+  }
+  
+  .about-flex-container h2{
+    margin-top: 16px;
+  }
+  
+  .about-flex-left{
+  flex-basis: 50%;
+  }
+  
+  .about-flex-container img{
+    width: 100%;
+  }
+  
+  .about-flex-right{
+  flex-basis: 45%;
+  }
+
+  .about-float-right{
+  
+    width: 40%;
+    padding:0 0 16px 16px;
+    float: right;
+  }
+
+  .about-float-left{
+    width: 40%;
+    padding:0 16px 16px 0;
+    float: left;
+  }
+
+  .about-float-left img{
+    width: 100%;
+  }
+
+  .about-float-right img{
+    width: 100%;
+  }
+
+  .about-flex-container-sp{
+    border-bottom: dashed 2px gray;
+  }
+
+  
+  .concert-flex-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: top;
+  
+  }
+  
+  .concert-flex-left{
+  flex-basis: 40%;
+  }
+  
+  .concert-flex-right{
+  flex-basis: 55%;
+  }
+  
+  .concert-flex-container img{
+    width: 100%;
+  }
+  .concert-flex-container p{
+    font-size: large;
+  margin: 6px 0 6px 0;  
+  }
+  
+  .concert-flex-container h3{
+    margin-bottom: 12px;
+  }
+  .concert-flex-container h4{
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .stage-flex-container{
+    display: flex;
+  }
+  
+  .stage-flex-right{
+    margin-left: 16px;
+  }
+  
+  .maincontents iframe{
+    border:0;
+  }
+  
+  .concert-place{
+    width: 100%;
+    padding-bottom: 32px;
+    border-bottom: dashed 2px gray;
+  }
+  
+  .concert-place iframe{
+    width: 80%;
+    height: 200px;
+  }
+  
+  .maincontents a{
+    color: red;
+    text-decoration: none;
+  }
+  .article-node-child{
+    padding: 8px 0 0 0;
+    margin:16px;
+    border-bottom: dashed 1px gray;
+    color: black;
+  }
+  
+  
+  .article-node-child p{
+    font-size: large;
+  }
+  
+  .article-node-child-date{
+   font-size: medium;
+    color: black;
+  }
+  
+  .article-main-title{
+    font-size: 32px;
+  }
+  .article-main h2{
+    font-size: 28px;
+    padding-top: 16px;
+    border-top: dashed 2px gray;
+  }
+  
+  .article-main h3{
+    font-size: 24px;
+  }
+  .article-main h4{
+    font-size: 20px;
+  }
+  .article-main h5{
+    font-size: 20px;
+  }
+  .article-main h6{
+    font-size: 20px;
+  }
+  .article-main ul{
+  list-style-type: square;
+  }
+  .article-node-child-tag{
+      margin: 0 5px 0 5px;
+      padding: 0 10px 0 10px;
+      border-radius: 8px;
+      font-size: medium;
+      
+  }
+  
+  .tag-column{
+    background-color: #4753a2;
+    color: white;
+  }
+  
+  .tag-others{
+    background-color: #e95464;
+    color: white;
+  }
+  .active{
+  border-bottom: dashed 2px gray;
+  }
+  
+  .back-arrow-end{
+    width: 100%;
+    text-align: right;
+    margin: 32px 0 32px 0;
+  }
+  .soloist-title{
+    margin-bottom: 0;
+  }
+  
+  .fourty-basis{
+    flex-basis: 45%;
+  }
+  
+  .fifty-basis{
+    flex-basis: 50%;
+  }
+  
+  .about-youtube-wrapper{
+  margin-top: 16px;
+    width: 100%;
+    height: 250px;
+  }
+  .about-youtube-wrapper iframe{
+    width: 100%;
+    height: 100%;
+  }
+  .bm-burger-button{
+    display: none;
+  }
+}
+@media screen and (max-width:1024px){
+img{
+  max-width: 500px;
+}
+  body{
+    margin: 0;
+    font-family: 'Noto Serif JP', serif;
+  }
+  
+  header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255,255,249,0.95);
+  z-index: 999;
+  }
+  header img{
+
+    width: 24px;
+    height: auto;
+  }
+  
+  .header-flex-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    white-space: nowrap;
+
+    margin:0em 2% 0em 0;
+  }
+  
+  header nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  nav h2{
+    display: none;
+  }
+  
+.sns-list{
+margin: 8px;
+}
+
+  header h2{
+    margin:0 0 0 2%;
+    font-weight: normal;
+    font-size: medium;
+  }
+  
+  header ul{
+    margin:1em 2% 1em 0;
+  list-style-type: none;
+  }
+  
+  header li{
+    display: inline-block;
+    padding:0.5em 1em;
+  }
+  
+  header a{
+    color: black;
+    text-decoration: none;
+  }
+
+  .link-list{
+    display: none;
+  }
+
+  
+
+  /* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 16px;
+  top: 16px;
+  z-index: 9999;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #005b99;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  top: 0;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: white;
+  font-size: 1.25em;
+  padding: 3em 1em 1em 1em;
+}
+.menu-title{
+  margin:0 0 2em 0 !important;
+  font-size: 14px !important;
+  border: none !important;
+  white-space: nowrap;
+}
+
+.bm-menu a{
+  color: black;
+  padding:.5em 0;
+  border-bottom: dashed 1px gray;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+}
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+  header img{
+    width: 24px;
+    height: auto;
+  }
+  
+  .header-flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+    margin:0em 2% 0em 0;
+  }
+  
+  
+  footer{
+  width: 100%;
+  /* position: absolute; */
+  padding-top: 16px;
+  padding-bottom: 16px;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255,255,249,0.95);
+  }
+  
+  footer img{
+    height: 1em;
+  }
+  
+  .toppage-top{
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    display: none;
+    
+  }
+  
+  .toppage-top p{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .top-backimage{
+    
+    height: 100%;
+    filter: blur(3px) opacity(0.5);
+  }
+  
+  .top-logoimage{
+    position: absolute;
+    width: 50%;
+    height: auto;
+    top: calc(12%);
+    left: calc(25%);
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 10px rgba(255,255,255,0.6)
+  }
+  
+  .toppage-contents{
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+  
+  .index-contents-top{
+    padding-top: 100vw !important;
+  }
+  
+  .flex-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex-container-reverse{
+    flex-direction: column-reverse !important;
+  }
+
+  .flex-container-unreverse{
+    flex-direction: column !important;
+  }
+  
+  .concert-img-wrapper{
+    max-width: 500px;
+    margin: 0 5%;
+  }
+  .top-youtube-wrapper{
+    position: relative;
+    margin: 0 5%;
+    flex-basis: 50%;
+    padding-bottom: calc(315 / 560 * 100%);
+  }
+  .about-us-text{
+    flex-basis: 50%;
+  }
+  
+  .top-youtube-wrapper iframe{
+    position: absolute;
+    top: 0;
+    right:0;
+    width: 100%;
+    height: 100%;
+    margin: auto auto;
+  }
+  
+  .concert-img{
+    width: 100%;
+  }
+  
+  .top-soloist-img{
+    width: 100%;
+    /* border-radius: 20px; */
+  }
+  
+  .concert-text{
+    position: relative;
+    margin:0 5% 0 0;
+    text-align: left;
+    padding-bottom: 5rem;
+  }
+  
+  .ict-container{
+    padding: 20px 4%;
+  margin-top: -10vh;
+  background-color: rgba(255,255,249,0.9);
+  }
+  
+  .top-content-container{
+    
+    padding: 20px 4%;
+  margin-top: 16px;
+  background-color: rgba(255,255,249,0.9);
+  }
+  
+  .black-back{
+    background-color: rgba(39,43,42, 0.95) !important;
+    color:white;
+  }
+  
+  .maincontents h2{
+    font-size:24px;
+  }
+  .maincontents h3{
+  font-size: 20px;  
+  }
+  
+  .maincontents h4{
+    font-size: 28px;
+  }
+  .maincontents p{
+    font-size: 14px;
+    line-height: 1.7em;
+  }
+  
+  .linkbtn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 2rem 0 ;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #212529;
+    border-radius: 0.5rem;
+  }
+  
+  .linkbtn a{
+    text-decoration: none;
+    padding: 2rem 2.5rem;
+  
+    color: #fff;
+    border-radius: 100% 80px / 80px 100%;
+    background-color: #618e34;
+    transition-duration: 1s;
+  }
+  
+  .linkbtn a:hover{
+    
+    color: #fff;
+    border-radius: 60% 80% / 100% 80%;
+    transition-duration: 1s;
+  }
+  
+  .see-more-arrow{
+    margin-left:.5em;
+    margin-right: .5em;
+    transition-duration: 1s;
+  }
+  .back-arrow{
+    margin-right: .5em;
+  }
+  
+  .link-back{
+    color: #4753a2 !important;
+    font-size: larger;
+    border-bottom: dashed 2px gray;
+    
+  }
+  
+  .linkbtn a:hover .see-more-arrow{
+    margin-right: 0em;
+    margin-left: 1em;
+  
+  }
+  
+  .page-flex-container{
+    margin: 0 4% 0 4%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+  
+  .flex-left{
+    margin-top: 3rem;
+    flex-basis: 70%;
+  }
+  
+  .flex-right{
+    text-align: center;
+    margin-top: 2rem;
+    flex-basis: 25%;
+  }
+  .name{
+    color: black !important;
+    font-size: large !important;
+    font-weight: bold;
+  }
+  
+  .flex-right img{
+    width: 100%;
+  }
+  
+  .profileimg {
+    width: 50% !important;
+    max-width: 250px;
+  }
+  .profile p {
+    color: gray;
+    font-size: small;
+  }
+  
+  .profile-contents{
+    padding: 1em;
+    text-align: left;
+  }
+  
+  .profile a{
+    color:#e95464 !important;
+  }
+  
+  .about-flex-container-sp{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 16px 0px 32px 0px;
+    margin: 0 0 0 0;
+    border-bottom: dashed 2px gray;
+  }
+  
+  .about-flex-container-sp h2{
+    margin-top: 16px;
+  }
+  
+  .about-flex-left-sp{
+  flex-basis: 50%;
+  }
+  
+  .about-flex-container-sp img{
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .about-flex-right-sp{
+  flex-basis: 45%;
+  }
+  
+  .about-flex-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 16px 0px 32px 0px;
+    margin: 0 0 0 0;
+    border-bottom: dashed 2px gray;
+  }
+  
+  .about-flex-container h2{
+    margin-top: 16px;
+  }
+  
+  .about-flex-left{
+  flex-basis: 50%;
+  }
+  
+  .about-flex-container img{
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .about-flex-right{
+  flex-basis: 45%;
+  }
+
+  .concert-flex-container{
+    display: flex;flex-direction: column-reverse;
+    align-items: top;
+  
+  }
+  
+  .concert-flex-left{
+  flex-basis: 40%;
+  }
+  
+  .concert-flex-right{
+  flex-basis: 55%;
+  }
+  
+  .concert-flex-container img{
+    width: 100%;
+    max-width: 500px;
+  }
+  .concert-flex-container p{
+  margin: 6px 0 6px 0;  
+  }
+  
+  .concert-flex-container h3{
+    margin-bottom: 12px;
+  }
+  .concert-flex-container h4{
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .stage-flex-container{
+    display: flex;
+  }
+  
+  .stage-flex-left{
+    
+    flex-basis: 100%;
+  }
+  
+  .maincontents iframe{
+    border:0;
+  }
+  
+  .concert-place{
+    width: 100%;
+    padding-bottom: 32px;
+    border-bottom: dashed 2px gray;
+  }
+  
+  .concert-place iframe{
+    width: 100%;
+    height: 200px;
+  }
+  
+  .maincontents a{
+    color: black;
+    text-decoration: none;
+  }
+  .article-node-child{
+    padding: 8px 0 0 0;
+    border-bottom: dashed 1px gray;
+    word-break: keep-all;
+  }
+  
+  
+  .article-node-child-date{
+   font-size: medium;
+    color: black;
+  }
+  
+  .article-main-title{
+    font-size: 24px;
+  }
+  .article-main h2{
+    font-size: 20px;
+    padding-top: 16px;
+    border-top: dashed 2px gray;
+  }
+  
+  .article-main h3{
+    font-size: 20px;
+  }
+  .article-main h4{
+    font-size: 20px;
+  }
+  .article-main h5{
+    font-size: 20px;
+  }
+  .article-main h6{
+    font-size: 20px;
+  }
+  .article-main ul{
+  list-style-type: square;
+  }
+  .article-node-child-tag{
+      margin: 0 5px 0 5px;
+      padding: 0 10px 0 10px;
+      border-radius: 8px;
+      font-size: medium;
+      
+  }
+  
+  .tag-column{
+    background-color: #4753a2;
+    color: white;
+  }
+  
+  .tag-others{
+    background-color: #e95464;
+    color: white;
+  }
+  .active{
+  border-bottom: dashed 2px gray;
+  }
+  
+  .back-arrow-end{
+    width: 100%;
+    text-align: right;
+    margin: 32px 0 32px 0;
+  }
+  .soloist-title{
+    word-break: keep-all;
+    font-size: 20px !important;
+    margin-bottom: 0;
+  }
+  
+  .fourty-basis{
+    flex-basis: 45%;
+  }
+  
+  .fifty-basis{
+    flex-basis: 50%;
+  }
+  
+  .about-youtube-wrapper{
+  margin-top: 16px;
+    width: 100%;
+    height: 250px;
+  }
+  .about-youtube-wrapper iframe{
+    width: 100%;
+    height: 100%;
+  }
+}
