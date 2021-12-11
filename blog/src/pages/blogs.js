@@ -22,8 +22,8 @@ export default function Home({ data }) {
                 <Link to={node.fields.slug}>
                 <div className="article-node-child">
                   {/* この辺変更 */}
-                {node.frontmatter.tag=="コラム" && <p> <span className="article-node-child-date">{node.frontmatter.date}</span><span className="article-node-child-tag tag-column">{node.frontmatter.tag}</span><br/> {node.frontmatter.title}</p>}
-                {node.frontmatter.tag!="コラム" && <p> <span className="article-node-child-date">{node.frontmatter.date}</span><span className="article-node-child-tag tag-others">{node.frontmatter.tag}</span><br/> {node.frontmatter.title}</p>}
+                {node.frontmatter.tag=="お知らせ" && <p> <span className="article-node-child-date">{node.frontmatter.date}</span><span className="article-node-child-tag tag-column">{node.frontmatter.tag}</span><br/> {node.frontmatter.title}</p>}
+                {node.frontmatter.tag!="お知らせ" && <p> <span className="article-node-child-date">{node.frontmatter.date}</span><span className="article-node-child-tag tag-others">{node.frontmatter.tag}</span><br/> {node.frontmatter.title}</p>}
                 
                 </div>
                 </Link>
