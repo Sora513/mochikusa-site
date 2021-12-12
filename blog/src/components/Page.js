@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from "gatsby"
-import profile from "../images/profile.jpg"
+import profile from "../images/profile.png"
 import twitterlogo from "../images/twitterlogo.png"
 import linelogo from "../images/LINE_logo.svg"
 import instagramlogo from "../images/instagram.png"
