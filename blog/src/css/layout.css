@@ -1037,13 +1037,14 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
   
   .maincontents a{
-    color: black;
+    color: red;
     text-decoration: none;
   }
   .article-node-child{
     padding: 8px 0 0 0;
     border-bottom: dashed 1px gray;
     word-break: keep-all;
+    color: black;
   }
   
   
