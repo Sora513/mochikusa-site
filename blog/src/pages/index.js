@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/Layout.js"
 import { graphql, Link } from 'gatsby'
 import Page from "../components/Page.js"
+import sitelogo from "../images/sitelogo.png"
 const Index = ({ data }) => {
   return (
     < div>
@@ -12,7 +13,8 @@ const Index = ({ data }) => {
       >
         <section className="maincontents">
           <Page>
-            <h1>トップページ</h1>
+            <h1 className="hidden">トップページ</h1>
+            <img className="toppage-logo" src={sitelogo}></img>
             <div className="maincontents-section">
               <h2>よもぎ誌</h2>
               <p>作ったもの/悩んだこと/学んだことを書いていきます。<br />

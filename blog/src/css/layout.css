@@ -1,5 +1,8 @@
 @media screen and (min-width:1025px){
 
+  .hidden{
+    display: none;
+  }
   body{
     margin: 0;
     font-family: 'Noto Serif JP', serif;
@@ -16,6 +19,10 @@
   header img{
     width: 24px;
     height: auto;
+  }
+
+  .toppage-logo{
+    width: 80%;
   }
   
   .header-flex-container{
@@ -505,12 +512,19 @@
   }
 }
 @media screen and (max-width:1024px){
+  .hidden{
+    display: none;
+  }
 img{
   max-width: 500px;
 }
   body{
     margin: 0;
     font-family: 'Noto Serif JP', serif;
+  }
+
+  .toppage-logo{
+    width: 80%;
   }
   
   header{
