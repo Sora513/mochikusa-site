@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from "gatsby"
 import profile from "../images/profile.png"
 import twitterlogo from "../images/twitterlogo.png"
-import linelogo from "../images/LINE_logo.svg"
+import lottiefileslogo from "../images/lottiefileslogo.svg"
 import instagramlogo from "../images/instagram.png"
 import githublogo from "../images/githublogo.png"
 const Page = (props) => {
@@ -33,6 +33,12 @@ const Page = (props) => {
                                 <td>GitHub</td>
                                 <td>:</td>
                                 <td><a href="https://github.com/Sora513" target="_blank">Sora513</a></td>
+                            </tr>
+                            <tr>
+                                <td width="16px"><img src={lottiefileslogo} /></td>
+                                <td>LottieFiles</td>
+                                <td>:</td>
+                                <td><a href="https://lottiefiles.com/sayagi" target="_blank">Sora513</a></td>
                             </tr>
                         </tbody>
                     </table>
