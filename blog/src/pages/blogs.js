@@ -8,24 +8,25 @@ export default function Home({ data }) {
   return (
     <div>
 
-<Layout
-      title={"記事 - "+data.site.siteMetadata.title}
-      description={data.site.siteMetadata.description+" - 記事"}
-      location="https://mochikusa.com/blogs/"
+      <Layout
+        title={"記事 - " + data.site.siteMetadata.title}
+        description={data.site.siteMetadata.description + " - 記事"}
+        location="https://mochikusa.com/blogs/"
       >
 
         <section className="maincontents">
           <Page>
             <h1>投稿記事一覧</h1>
-            {data.allMarkdownRemark.nodes.map(node => (
-              <div key={node.id} className="article-node">
-                <Link to={node.fields.slug}>
-                <div className="article-node-child">
-                  {/* この辺変更 */}
-                {node.frontmatter.tag=="お知らせ" && <p> <span className="article-node-child-date">{node.frontmatter.date}</span><span className="article-node-child-tag tag-column">{node.frontmatter.tag}</span><br/> {node.frontmatter.title}</p>}
-                {node.frontmatter.tag!="お知らせ" && <p> <span className="article-node-child-date">{node.frontmatter.date}</span><span className="article-node-child-tag tag-others">{node.frontmatter.tag}</span><br/> {node.frontmatter.title}</p>}
-                
-                </div>
+            {data.allMicrocmsBlog.edges.map(({ node }) => (
+              <div key={node.blogId} className="article-node">
+                <Link to={`/blog/${node.blogId}`}>
+                  <div className="article-node-child">
+                    {/* この辺変更 */}
+                    {node.tag == "お知らせ" && <p> <span className="article-node-child-date">{node.createdAt}</span><span className="article-node-child-tag tag-column">{node.tag}</span><br /> {node.title}</p>}
+                    {node.tag != "お知らせ" && <p> <span className="article-node-child-date">{node.createdAt}</span><span className="article-node-child-tag tag-others">{node.tag}</span><br /> {node.title}</p>}
+
+                  </div>
+
                 </Link>
               </div>
             ))}
@@ -44,18 +45,13 @@ export const query = graphql`
         description
       }
     }
-    allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-    ) {
-      nodes {
-        html
-        fields {
-          slug
-        }
-        frontmatter {
-          date(formatString: "YYYY/MM/DD")
-          title
+    allMicrocmsBlog {
+      edges {
+        node {
+          blogId
+          createdAt(formatString: "YYYY年MM月DD日")
           tag
+          title
         }
       }
     }

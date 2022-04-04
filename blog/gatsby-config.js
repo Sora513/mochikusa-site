@@ -3,6 +3,11 @@
  *
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
+ const path = require('path');
+
+ require('dotenv').config({
+   path: `.env.${process.env.NODE_ENV}`
+ });
 
  module.exports = {
   siteMetadata: {
@@ -23,6 +28,18 @@
       options: {
         name: `src`,
         path: `${__dirname}/src/`,
+      },
+    },
+    {
+      resolve: "gatsby-source-microcms",
+      options: {
+        apiKey: process.env.API_KEY,
+        serviceId: 'mochikusa',
+        apis: [
+          {
+            endpoint: "blog",
+          },
+        ],
       },
     },
     {
@@ -56,7 +73,6 @@
         ],
       },
     },
-    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sitemap`,
