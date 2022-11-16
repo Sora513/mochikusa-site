@@ -22,10 +22,8 @@ const Profile = ({ data }) => {
             <div className="maincontents-section">
               <h2>所属</h2>
               <ul>
-                <li><a href="https://www.nitech.ac.jp/edu/new/kodo/em.html">名古屋工業大学 機械工学科2年</a></li>
                 <li><a href="https://next-micon.github.io/">Next-MICON</a></li>
                 <li><a href="https://nitech-create.com/">nitech Create(niC)</a></li>
-                <li><a href="http://nitmic.club.nitech.ac.jp/">NITMic</a></li>
               </ul>
               <p>それぞれリンクになっているので、気になる組織があれば、是非ご覧ください。</p>
             </div>
