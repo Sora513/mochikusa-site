@@ -26,7 +26,7 @@ const Page = (props) => {
                                 <td width="16px"><img src={twitterlogo} /></td>
                                 <td>Twitter</td>
                                 <td>:</td>
-                                <td><a href="https://twitter.com/kusa_yomogi" target="_blank">@kusa_yomogi</a></td>
+                                <td><a href="https://twitter.com/monmoutch" target="_blank">@monmoutch</a></td>
                             </tr>
                             <tr>
                                 <td width="16px"><img src={githublogo} /></td>
